@@ -1,0 +1,41 @@
+#                            -*- mode: org; -*-
+#
+#+TITLE:             *cfMesh README for version 1.0*
+#+AUTHOR:                      Franjo Juretic.
+#+DATE:                           May 2014
+#+LINK:                  http://www.c-fields.com
+#+OPTIONS:
+
+cfMesh is a library for mesh generation built on OpenFOAM.
+
+* License
+  cfMesh is free software; you can redistribute it and/or modify it under the
+  terms of the GNU General Public License as published by the Free Software
+  Foundation; either version 3 of the License, or (at your option) any later
+  version.
+
+* System requirements
+  cfMesh is developed and tested on Linux and MS Windows.
+
+* Installation
+  The binaries can be downloaded from www.c-fields.com
+
+* Building from Sources (Optional)
+
+  cfMesh can be built with recent versions of OpenFOAM and foam-extend. In order to build the library, a working OpenFOAM environment is needed. The build started by the Allwmake script located in this folder. It can be built with gcc and mingw compilers which support OpenMP (gcc-4.2.4 and above). Other compilers are not tested.
+
+* Getting Started
+
+  Copy the 'tutorials' examples directory in the cfMesh distribution to the
+  'run' directory.  If the OpenFOAM environment variables are set correctly,
+  then the following command will work correctly:
+
+  + cp -r tutorials $FOAM_RUN
+
+  Run the first example case of a simplified car body:
+
+  + cd $FOAM_RUN/tutorials/asmoOctree
+  + cartesianMesh
+
+* Documentation
+  http://www.c-fields.com
